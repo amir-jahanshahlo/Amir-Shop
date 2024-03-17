@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*.slider-video{
+    position: absolute;
+}*/
+
+video {
+    max-width: 100%;
+    display: block;
+
+}
