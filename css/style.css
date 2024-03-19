@@ -4,17 +4,18 @@
 *{
     box-sizing: border-box;
     margin: 0%;
+    padding: 0%;
 }
 
-/* header */
+/* header ////////////////////////////*/
 .header-section{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     z-index: 9;
     position: absolute;
     align-items: center;
     width: 100%;
-    /*margin: 0%;*/
+    padding: 2.25rem;
 }
 
 .menu-list{
@@ -28,7 +29,7 @@
 
 .menu-list-item{
     padding: 35px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: 500;
     font-family: "Anek Kannada", sans-serif;
@@ -37,8 +38,7 @@
 
 ul{
     list-style: none;
-    /*display: flex;*/
-    /*align-items: center;*/
+    padding: 0;
 }
 
 a{
@@ -47,10 +47,14 @@ a{
 }
 
 .logo-name-p{
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 800;
     color: azure;
     font-family: "Madimi One", sans-serif;
+}
+
+.log-btn{
+
 }
 
 /* end header */
