@@ -15,22 +15,17 @@
     position: absolute;
     align-items: center;
     width: 100%;
-    padding: 2.25rem;
+    padding: 20px;
+    padding-top: 0%;
 }
 
 .menu-list{
     display: flex;
-    justify-content: space-between;
-}
-
-.menu{
-    /*display: block;*/
 }
 
 .menu-list-item{
     padding: 35px;
     font-size: 1.5rem;
-    line-height: 1.5rem;
     font-weight: 500;
     font-family: "Anek Kannada", sans-serif;
     color: aliceblue;
@@ -53,11 +48,26 @@ a{
     font-family: "Madimi One", sans-serif;
 }
 
-.log-btn{
-
+.log-in{
+    color: white;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 30px;
+    /*font-family: "Anek Kannada", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;*/
 }
 
-/* end header */
+.log-in:hover {
+    background: inherit;
+    color: rgb(237, 188, 124);
+    border-color: goldenrod;
+    border: 2px solid;
+}
+
+/* end header ////////////////////////// */
 
 .slider-video{
     position: absolute;
