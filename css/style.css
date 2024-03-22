@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
 *{
     box-sizing: border-box;
@@ -76,12 +77,12 @@ a{
     top: 0%;
     /*left: 0%;*/
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     object-fit: cover;
     opacity: 0.9;
 }
 .slider-section{
-    /*height: 100%;*/
+    height: 100vh; /* Ensure full screen */
     overflow: hidden;
     z-index: -1;
     align-items: center;
@@ -129,4 +130,23 @@ h4{
     margin-top: 20px;
     text-decoration: underline;
     font-size: 20px;
+}
+/* end head-text////////////////////////// */
+
+/* site motto */
+.site-motto{
+    padding: 1.5rem;
+    display: block;
+    text-align: center;
+    text-wrap: wrap;
+    font-family:"Rethink Sans", sans-serif;
+}
+
+.site-motto h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.site-motto a{
+    text-decoration: underline;
 }
