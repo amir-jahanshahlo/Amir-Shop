@@ -188,7 +188,8 @@ h4{
 }
 
 .coll-type:nth-child(2){
-    background-image: url('../assets/images/pexels-konstantin-mishchenko-1926769.jpg');
+    background-image: url('../assets/images/pexels-konstantin-mishchenko-1926769\ \(2\).jpg');
+    /*background-position: top;*/
 }
 
 .coll-type:nth-child(3){
@@ -197,4 +198,5 @@ h4{
 
 .coll-type:nth-child(4){
     background-image: url('../assets/images/pexels-arif-khan-17298688.jpg');
+    background-position: bottom;
 }
