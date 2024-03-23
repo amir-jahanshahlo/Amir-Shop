@@ -150,3 +150,51 @@ h4{
 .site-motto a{
     text-decoration: underline;
 }
+/* end site motto */
+
+/* new collection */
+.New-collection{
+    margin: 0 10%;
+    align-items: center;
+    align-content: center;
+    max-width: 1440px;
+}
+.New-collection p {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.new-collection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.coll-type{
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    min-height: 630px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+.coll-type:first-child{
+    background-image: url('../assets/images/pexels-andrea-piacquadio-842811.jpg');
+}
+
+.coll-type:nth-child(2){
+    background-image: url('../assets/images/pexels-konstantin-mishchenko-1926769.jpg');
+}
+
+.coll-type:nth-child(3){
+    background-image: url('../assets/images/pexels-ron-lach-9256867.jpg');
+}
+
+.coll-type:nth-child(4){
+    background-image: url('../assets/images/pexels-arif-khan-17298688.jpg');
+}
