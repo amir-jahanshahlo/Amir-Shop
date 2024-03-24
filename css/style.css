@@ -135,11 +135,12 @@ h4{
 
 /* site motto */
 .site-motto{
-    padding: 1.5rem;
+    padding: 60px 0;
     display: block;
     text-align: center;
     text-wrap: wrap;
     font-family:"Rethink Sans", sans-serif;
+    margin: 0 30px;
 }
 
 .site-motto h5{
@@ -165,6 +166,7 @@ h4{
     font-size: 42px;
     font-weight: 400;
     line-height: 50px;
+    margin-bottom: 30px;
 }
 .new-collection{
     display: grid;
@@ -183,13 +185,38 @@ h4{
     width: 100%;
 }
 
+.coll-type div {
+    top: 20px;
+    left: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.coll-type div :first-child{
+    font-size: 42px;
+}
+
+.coll-type div :nth-child(2){
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.coll-type:nth-child(4) span {
+    color: white;
+}
+
+.coll-type:nth-child(4) a {
+    color: white;
+}
+
 .coll-type:first-child{
     background-image: url('../assets/images/pexels-andrea-piacquadio-842811.jpg');
 }
 
 .coll-type:nth-child(2){
     background-image: url('../assets/images/pexels-konstantin-mishchenko-1926769\ \(2\).jpg');
-    /*background-position: top;*/
 }
 
 .coll-type:nth-child(3){
