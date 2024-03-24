@@ -173,6 +173,7 @@ h4{
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin: 0 auto;
+    background-color: black;
 }
 
 .coll-type{
@@ -183,6 +184,12 @@ h4{
     position: relative;
     transition: all .3s ease-in-out;
     width: 100%;
+    background-color: black;
+}
+
+.coll-type:hover{
+    opacity: 0.8;
+    visibility: visible;
 }
 
 .coll-type div {
@@ -192,6 +199,7 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    z-index: 10;
 }
 
 .coll-type div :first-child{
