@@ -235,3 +235,57 @@ h4{
     background-image: url('../assets/images/pexels-arif-khan-17298688.jpg');
     background-position: bottom;
 }
+/* end new collection */
+
+/* top picks */
+.Top-picks-scroll{
+    margin-top: 2rem;
+    
+}
+
+.top-picks-title{
+    font-weight: 700;
+    font-family: "Anek Kannada", sans-serif;
+    margin: 0 10%;
+}
+
+.top-picks{
+    margin: 0 10%;
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+/*.top-picks-items ul {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}*/
+
+.top-picks-items{
+    display: flex;
+    overflow-x: auto;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c2cbcd;
+    text-align: left;
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* for IE and Edge */
+}
+
+.top-picks-items li {
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.top-picks-items li:hover {
+    color: #000;
+}
+
+.top-picks-items::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
