@@ -8,6 +8,19 @@
     padding: 0%;
 }
 
+:root{
+    /* colors */
+    --ALICEBLUE:aliceblue;
+    --AZURE:azure;
+    --WHITE:#fff;
+    --GOLDENROD:goldenrod;
+    --BLACK:#000;
+    --DARKBLUE:#c2cbcd;
+    --GRAY:#666;
+
+
+}
+
 /* header ////////////////////////////*/
 .header-section{
     display: inline-flex;
@@ -29,7 +42,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     font-family: "Anek Kannada", sans-serif;
-    color: aliceblue;
+    color: var(--ALICEBLUE);
 }
 
 ul{
@@ -45,12 +58,12 @@ a{
 .logo-name-p{
     font-size: 30px;
     font-weight: 800;
-    color: azure;
+    color: var(--AZURE);
     font-family: "Madimi One", sans-serif;
 }
 
 .log-in{
-    color: white;
+    color: var(--WHITE);
     font-size: 20px;
     border: 1px solid;
     border-radius: 20px;
@@ -65,7 +78,7 @@ a{
 .log-in:hover {
     background: inherit;
     color: rgb(237, 188, 124);
-    border-color: goldenrod;
+    border-color: var(--GOLDENROD);
     border: 2px solid;
 }
 
@@ -105,7 +118,7 @@ video {
     left: 25%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    color: white;
+    color: var(--WHITE);
     text-align: left;
     padding: 10px 20px; 
 
@@ -173,7 +186,7 @@ h4{
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
     margin: 0 auto;
-    background-color: black;
+    background-color: var(--BLACK);
 }
 
 .coll-type{
@@ -184,7 +197,7 @@ h4{
     position: relative;
     transition: all .3s ease-in-out;
     width: 100%;
-    background-color: black;
+    background-color: var(--BLACK);
 }
 
 .coll-type:hover{
@@ -267,7 +280,7 @@ h4{
     overflow-x: auto;
     padding: 0 0 10px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #c2cbcd;
+    border-bottom: 2px solid var(--DARKBLUE);
     text-align: left;
     scrollbar-width: none;
     -ms-overflow-style: none; /* for IE and Edge */
@@ -277,13 +290,13 @@ h4{
     padding: 10px 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    color: #666;
+    color: var(--GRAY);
     cursor: pointer;
     transition: color 0.3s;
 }
 
 .top-picks-items li:hover {
-    color: #000;
+    color: var(--BLACK);
 }
 
 .top-picks-items::-webkit-scrollbar {
