@@ -4,8 +4,8 @@
 
 *{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 :root{
@@ -167,17 +167,35 @@ h4{
 /* end site motto */
 
 /* Explore and story */
-.explore{
+.explore {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    align-items: center;
-    /*max-width: 1440px;*/
-    margin: 0 5% 5%;
 }
 
-.explore-items{
-    
+.explore-items {
+    /*border: 1px solid;*/
+    align-items: center;
+    padding: 5px;
+    flex: 1 1 300px; /* Allow items to grow, shrink, and start at 300px width */
+    max-width: calc(50% - 10px); /* Maximum width for two items per row with gap */
 }
+
+.explore-items img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    display: block;
+}
+
+.explore-items h4 {
+    line-height: 1.10;
+    font-size: 18px;
+}
+
+.explore-items p {
+    font-size: 15px;
+}
+
 
 
 /* new collection */
