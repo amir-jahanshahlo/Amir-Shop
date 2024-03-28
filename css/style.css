@@ -22,32 +22,45 @@
 }
 
 /* header ////////////////////////////*/
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    /*background-image: linear-gradient(rgb(12,3,51,0.3) , rgb(12,3,51,0.3));*/
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header-section{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     z-index: 9;
     position: absolute;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 2em 2em 0;
     padding-top: 0%;
+    top: 0;
+    left: 0;
 }
 
 .menu-list{
     display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
 }
 
 .menu-list-item{
+    list-style: none;
+    display: inline-block;
     padding: 35px;
     font-size: 1.5rem;
     font-weight: 500;
     font-family: "Anek Kannada", sans-serif;
     color: var(--ALICEBLUE);
-}
-
-ul{
-    list-style: none;
-    padding: 0;
 }
 
 a{
@@ -87,7 +100,9 @@ a{
 /* video//////////////////////////// */
 .slider-video{
     position: absolute;
-    top: 0%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     /*left: 0%;*/
     width: 100%;
     /*height: 100%;*/
@@ -373,7 +388,7 @@ h4{
   display: none;
 }*/
 
-.toggle .line1 {
+/*.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
@@ -383,10 +398,10 @@ h4{
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
+}*/
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .menu-list {
         position: absolute;
         right: 0;
@@ -432,5 +447,19 @@ h4{
 
     .nav-links li {
         animation: navLinkFade 0.5s ease forwards 0.5s;
+    }
+}*/
+
+@media (min-aspect-ratio:16/9){
+    .slider-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .slider-video{
+        width: auto;
+        height: 100%;
     }
 }
