@@ -169,7 +169,7 @@ h4{
 /* Explore and story */
 .explore {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 10px;
     align-items: center;
     margin: 0 2rem 5rem 2rem;
@@ -192,13 +192,17 @@ h4{
     line-height: 1.10;
     font-size: 18px;
     margin-bottom: 0.5rem;
+    text-wrap: wrap;
     color: var(--BLACK);
 }
 
-.explore-items p {
+.explore-text {
     font-size: 15px;
     color: var(--GRAY);
+    text-wrap: wrap;
 }
+
+
 
 
 
