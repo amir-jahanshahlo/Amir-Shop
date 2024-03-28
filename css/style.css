@@ -55,11 +55,32 @@
 .menu-list-item{
     list-style: none;
     display: inline-block;
-    padding: 35px;
-    font-size: 1.5rem;
-    font-weight: 500;
+    margin: 10px 30px;
+    font-size: 18px;
     font-family: "Anek Kannada", sans-serif;
+}
+
+.menu-list-item a{
     color: var(--ALICEBLUE);
+    text-decoration: none;
+    position: relative;
+}
+
+.menu .menu-list .menu-list-item a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--WHITE);
+    transition: 0.3s;
+    
+}
+
+.menu .menu-list .menu-list-item a:hover::after{
+    width: 100%;
 }
 
 a{
