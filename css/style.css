@@ -144,18 +144,29 @@ a{
 .head-text {
     position: absolute;
     top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 8rem;
+    /*transform: translate(-50%, -50%);*/
     opacity: 1;
-    color: var(--WHITE);
     text-align: left;
-    padding: 10px 20px; 
+    /*padding: 10px 20px;*/
 
 }
 
 .head-text h1{
-    font-size: 40px;
-    font-family: "Madimi One", sans-serif;
+    font-size: 150px;
+    /*font-family: "Madimi One", sans-serif;*/
+    color: transparent;
+    -webkit-text-stroke: 1px var(--WHITE);
+    background: url('../assets/images/back.png');
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+     100%{
+        background-position: 2000px 0;
+     }
 }
 
 h4{
@@ -164,6 +175,7 @@ h4{
     text-align: left;
     text-wrap: wrap; 
     width: 500px;
+    color: var(--WHITE);
 }
 
 .ul-link{
@@ -172,6 +184,7 @@ h4{
     margin-top: 20px;
     text-decoration: underline;
     font-size: 20px;
+    color: var(--WHITE);
 }
 /* end head-text////////////////////////// */
 
