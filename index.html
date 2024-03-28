@@ -9,7 +9,7 @@
   <body>
     <!-- header section -->
     <header>
-      <div class="header-section">
+      <nav class="header-section">
         <div class="logo-name">
           <a href="./index.html"><p class="logo-name-p">HEALET</p></a>
         </div>
@@ -34,11 +34,16 @@
               <a href="#">Why us ?</a>
             </li>
           </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
         </nav>
         <nav>
           <a class="log-in" href="#">Log-in</a>
         </nav>
-      </div>
+      </nav>
     </header>
     <!-- end of the header -->
 
@@ -169,6 +174,19 @@
         <nav class="offer-card"></nav>
       </div>
     </section>-->
+
+
+    <script>
+      const burger = document.querySelector('.burger');
+      const navLinks = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+
+        // Burger Animation
+        burger.classList.toggle('toggle');
+    });
+    </script>
     
   </body>
 </html>
