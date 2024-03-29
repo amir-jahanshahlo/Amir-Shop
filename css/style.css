@@ -30,6 +30,7 @@
     padding: 0 5%;
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
     margin-top: 1rem;
 }
@@ -48,16 +49,19 @@
 
 .menu-list{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     list-style: none;
     padding: 0;
 }
 
 .menu-list-item{
     list-style: none;
-    display: inline-block;
-    margin: 10px 30px;
-    font-size: 18px;
+    /*display: inline-block;*/
+    /*margin: 3rem;*/
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 25px;
+    font-weight: 600;
     font-family: "Anek Kannada", sans-serif;
 }
 
@@ -97,20 +101,69 @@ a{
 }
 
 .log-in{
-    color: var(--WHITE);
-    font-size: 20px;
-    border: 1px solid;
-    border-radius: 20px;
+    background-color: transparent;
+    color: var(--ALICEBLUE);
+    font-size: 30px;
+    border: 0;
     padding: 10px 30px;
     font-family: "Madimi One", sans-serif;
+    position: relative;
+    cursor: pointer;
 }
 
-.log-in:hover {
+.log-in::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+  }
+
+  .log-in:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+  }
+  
+  .log-in:hover::before {
+    width: 100%;
+  }
+  
+  .log-in::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .log-in:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+
+.log-in button::after{
+
+}
+
+/*.log-in:hover {
     background: inherit;
     color: rgb(237, 188, 124);
     border-color: var(--GOLDENROD);
     border: 2px solid;
-}
+}*/
+
+/*.log-in p:hover{
+    font-size: 35px
+}*/
 
 /* end header ////////////////////////// */
 
@@ -210,12 +263,13 @@ a{
 
 /* site motto */
 .site-motto{
-    padding: 60px 0;
-    display: block;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     text-wrap: wrap;
     font-family:"Rethink Sans", sans-serif;
-    margin: 0 30px;
 }
 
 .site-motto h5{
@@ -225,6 +279,7 @@ a{
 
 .site-motto a{
     text-decoration: underline;
+    padding-top: 2rem;
 }
 /* end site motto */
 
@@ -251,17 +306,25 @@ a{
 .explore-items h4 {
     line-height: 1.10;
     font-size: 18px;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
     text-wrap: wrap;
     color: var(--BLACK);
 }
 
 .explore-text {
-    font-size: 15px;
+    font-size: 20px;
     color: var(--GRAY);
     text-wrap: wrap;
-    /*width: 500px;*/
+    margin-top: 1rem;
 }
+
+/*.explore-text p:first-child::first-letter {
+    color: var(--BLACK);
+    padding-right: 8px;
+  
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+  }*/
 
 /* new collection */
 .New-collection{
@@ -525,11 +588,17 @@ a{
     .head-text h1 {
         font-size: 50px; 
     }
+    /*.menu{
+        display: none;
+    }*/
 }
 
 @media only screen and (max-width: 767px) {
     .head-text h1 {
         font-size: 25px;
         text-wrap: wrap;
+    }
+    .menu{
+        display: none;
     }
 }
