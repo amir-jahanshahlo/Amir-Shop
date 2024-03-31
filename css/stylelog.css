@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --ALICEBLUE:aliceblue;
+    --AZURE:azure;
+    --WHITE:#fff;
+    --GOLDENROD:goldenrod;
+    --BLACK:#000;
+    --DARKBLUE:#c2cbcd;
+    --GRAY:#191a1b;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    background-image: url('../assets/images/pexels-godisable-jacob-949670.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+}
+
+
+/* header ////////////////////////////*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content:space-between;
+    z-index: 99;
+}
+
+.menu a{
+    color: var(--ALICEBLUE);
+    text-decoration: none;
+    position: relative;
+    font-family: "Anek Kannada", sans-serif;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.menu a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--WHITE);
+    transition: 0.3s;
+    
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-name-p{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--AZURE);
+    font-family: "Madimi One", sans-serif;
+}
+
+/* login part */
+.wrapper{
+    position: fixed;
+    width: 600px;
+    height: 640px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);*/
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}

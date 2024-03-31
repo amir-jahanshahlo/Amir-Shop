@@ -17,8 +17,6 @@
     --BLACK:#000;
     --DARKBLUE:#c2cbcd;
     --GRAY:#191a1b;
-
-
 }
 
 /* header ////////////////////////////*/
@@ -149,10 +147,6 @@ a{
     color: aliceblue;
     border-radius: 20px;
   }
-
-.log-in button::after{
-
-}
 
 /*.log-in:hover {
     background: inherit;
