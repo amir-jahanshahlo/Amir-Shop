@@ -92,7 +92,7 @@ a{
 .wrapper{
     position: absolute;
     width: 500px;
-    height: 540px;
+    height: 500px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -119,7 +119,7 @@ a{
     color: var(--WHITE);
     text-align: center;
     font-family: "Madimi One", sans-serif;
-    top:0;
+    top:15px;
     right: 0;
     left: 0;
     position: absolute;
@@ -132,7 +132,7 @@ a{
     height: 50px;
     border-bottom: 2px solid #ccd3d9;
     margin: 40px 0;
-    bottom: 30px;
+    bottom: 0;
 }
 
 .input-box label{
@@ -178,11 +178,9 @@ a{
     font-size: 1.2rem;
     color: var(--ALICEBLUE);
     font-weight: 600;
-    margin: -15px 0 15px;
+    margin: -20px 0 15px;
     display: flex;
     justify-content: space-between;
-    top: 0;
-
 }
 
 .remember-forgot label input {
@@ -205,12 +203,13 @@ a{
     font-size: 2rem;
     color: var(--ALICEBLUE);
     font-weight: 600;
+    margin-top: 40px;
 
 }
 
 .login-register{
     font-size: 1rem;
-    color: #191a1b;
+    color: var(--WHITE);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
@@ -218,7 +217,8 @@ a{
 
 .login-register p a{
     color: var(--ALICEBLUE);
-    font-weight: 600;
+    font-weight: 700;
+    padding-left: 10px;
 }
 
 .login-register p a:hover{
