@@ -107,7 +107,7 @@ a{
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: height 0.2s ease;
 }
 
@@ -129,7 +129,7 @@ a{
     transition: none;
     transform: translateX(600px);
 }
-.wrapper.form-box.Register{
+.wrapper .form-box.Register{
     position: absolute;
     transition: none;
     transform: translateX(400px);
