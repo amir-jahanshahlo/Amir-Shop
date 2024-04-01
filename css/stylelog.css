@@ -91,8 +91,8 @@ a{
 /* login part */
 .wrapper{
     position: absolute;
-    width: 600px;
-    height: 640px;
+    width: 500px;
+    height: 540px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
@@ -108,30 +108,40 @@ a{
     left: 5%;
     transform: translateY(-50%);
 }
+/*
+.form-box{
+    align-items: center;
+    align-content: center;
+}*/
 
 .form-box h2{
     font-size: 4rem;
     color: var(--WHITE);
     text-align: center;
     font-family: "Madimi One", sans-serif;
-    top: 10%;
+    top:0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .input-box{
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-bottom: 2px solid #ccd3d9;
     margin: 40px 0;
+    bottom: 30px;
 }
 
 .input-box label{
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 4px;
     transform: translateY(-50%);
-    font-size: 1rem;
-    color: #d0deec;
+    font-size: 1.2rem;
+    color: var(--WHITE);
     font-weight: 500;
     pointer-events: none;
     transition: 0.5s;
@@ -148,7 +158,7 @@ a{
     background: transparent;
     border: none;
     outline: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--ALICEBLUE);
     font-weight: 600;
     padding: 0 35px 0 5px;
@@ -159,23 +169,24 @@ a{
     position: absolute;
     right: 8px;
     font-size: 1.5rem;
-    color: #c9ccd0;
+    color: var(--WHITE);
     line-height: 57px;
     
 }
 
 .remember-forgot{
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--ALICEBLUE);
     font-weight: 600;
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
+    top: 0;
 
 }
 
 .remember-forgot label input {
-    accent-color: var(--GRAY);
+    accent-color: var(--ALICEBLUE);
     margin-right: 5px;
 }
 
@@ -206,7 +217,7 @@ a{
 }
 
 .login-register p a{
-    color: #191a1b;
+    color: var(--ALICEBLUE);
     font-weight: 600;
 }
 
