@@ -585,7 +585,18 @@ a{
     .head-text{
         font-size: 100px;
     }
-
+    .header-section .menu{
+        display: none;
+    } 
+    .header-section .log-in{
+        display: none;
+    }
+    .header-section .toggle-btn{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
+    }
 }
 
 @media (max-aspect-ratio:16/9) and (max-width: 1440) {
@@ -595,6 +606,18 @@ a{
     }
     .head-text{
         font-size: 100px;
+    }
+    .header-section .menu{
+        display: none;
+    } 
+    .header-section .log-in{
+        display: none;
+    }
+    .header-section .toggle-btn{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
     }
 }
 
@@ -610,6 +633,23 @@ a{
     .head-text h1 {
         font-size: 50px; 
     }
+    /*.header-section .menu{
+        display: none;
+    } 
+    .header-section .log-in{
+        display: none;
+    }
+    .header-section .toggle-btn{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+
+    .head-text{
+        left: 5%;
+        top: 60%;
+    }*/
 }
 
 @media only screen and (max-width: 767px) {
