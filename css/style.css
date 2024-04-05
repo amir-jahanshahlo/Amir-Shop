@@ -349,12 +349,13 @@ a{
     initial-letter: 2;
   }*/
 
-/* new collection */
-.New-collection{
+/* new collection ///////////////////////////////*/
+
+/*.New-collection{
     margin: 0 10%;
     align-items: center;
     align-content: center;
-    max-width: 1440px;
+    display: grid;;
 }
 .New-collection p {
     display: block;
@@ -368,32 +369,29 @@ a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 30px;
-    margin: 0 auto;
+    margin: 0 auto;*/
     /*background-color: var(--BLACK);*/
-    grid-auto-flow: dense;
-}
+    /*grid-auto-flow: dense;*/
+/*}*/
 
-.coll-type{
-    background-repeat: no-repeat;
-    background-size: cover;
+/*.coll-type{
     cursor: pointer;
-    min-height: 630px;
-    position: relative;
     transition: all .3s ease-in-out;
     width: 100%;
     height: auto;
-    background-color: var(--BLACK);
-    /*max-width: 100%;
-    height: auto;
-    display: block;*/
 }
 
-.coll-type:hover{
+.coll-type img{
+    width: 100%;
+    height: auto;
+}*/
+
+/*.coll-type:hover{
     opacity: 0.8;
     visibility: visible;
-}
+}*/
 
-.coll-type div {
+/*.coll-type div {
     top: 20px;
     left: 30px;
     position: absolute;
@@ -401,9 +399,9 @@ a{
     flex-direction: column;
     gap: 15px;
     z-index: 10;
-}
+}*/
 
-.coll-type div :first-child{
+/*.coll-type div :first-child{
     font-size: 42px;
 }
 
@@ -418,9 +416,9 @@ a{
 
 .coll-type:nth-child(4) a {
     color: white;
-}
+}*/
 
-.coll-type:first-child{
+/*.coll-type:first-child{
     background-image: url('../assets/images/pexels-andrea-piacquadio-842811.jpg');
 }
 
@@ -435,8 +433,8 @@ a{
 .coll-type:nth-child(4){
     background-image: url('../assets/images/pexels-arif-khan-17298688.jpg');
     background-position: bottom;
-}
-/* end new collection */
+}*/
+/* end new collection //////////////////////*/
 
 /* New Arrivel */
 .section-arrivle{
