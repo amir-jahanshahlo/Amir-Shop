@@ -435,6 +435,14 @@ a{
 }*/
 /* end new collection //////////////////////*/
 
+/* line */
+.line{
+    border-bottom: 2px solid var(--BLACK);
+    /*margin-bottom: 3rem;*/
+    /*width: 100%;*/
+    margin: 3rem;
+}
+
 /* shop by category */
 .shop-category{
     display: flex;
