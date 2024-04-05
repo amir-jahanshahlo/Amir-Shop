@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Madimi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -435,6 +434,23 @@ a{
     background-position: bottom;
 }*/
 /* end new collection //////////////////////*/
+
+/* shop by category */
+.shop-category{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.category img{
+    width: 100%;
+    height: auto;
+}
 
 /* New Arrivel */
 .section-arrivle{
