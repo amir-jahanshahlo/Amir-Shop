@@ -16,6 +16,8 @@
     --BLACK:#000;
     --DARKBLUE:#c2cbcd;
     --GRAY:#191a1b;
+    --EGRAY:#707072;
+    --BLACK2:#111111;
 }
 
 /* header ////////////////////////////*/
@@ -299,9 +301,16 @@ a{
     margin-bottom: 10px;
 }
 
+.site-motto p{
+    color: var(--BLACK);
+    font-weight: 500;
+    font-family:"Rethink Sans", sans-serif;
+    font-size: 16px;
+}
+
 .site-motto a{
     text-decoration: underline;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 /* end site motto */
 
@@ -309,7 +318,7 @@ a{
 .explore {
     display: flex;
     gap: 10px;
-    margin: 0 2rem 5rem 2rem;
+    margin: 0 2rem 0rem 2rem;
 }
 
 .explore-items {
@@ -353,7 +362,7 @@ a{
     border-bottom: 2px solid var(--BLACK);
     /*margin-bottom: 3rem;*/
     /*width: 100%;*/
-    margin: 3rem;
+    margin: 4rem 3rem 1rem 3rem;
 }
 
 /* shop by category */
@@ -383,21 +392,26 @@ a{
 
 .category:hover{
     transform: scale(1.1);
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 /* New Arrivel */
-.section-arrivle{
-    margin-top: 5rem;
-}
 .new-arrivel{
-    display: flex;
+    display: grid;
     gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    overflow-x: auto;
+    /*overscroll-behavior-inline:contain*/
     margin: 0 2rem 5rem 2rem;
 }
 
+.item-arrivel{
+    display: grid;
+    grid-template-rows: min-content;
+}
 .item-arrivel img{
-    width: 100%;
+    inline-size: 100%;
     height: auto;
 }
 
@@ -409,6 +423,26 @@ a{
     display: block;
     font-weight: 400;
     line-height: 50px;
+}
+
+.arrivle-caption{
+    display: grid;
+    padding: 12px 0 2px 0;
+    font-size: 20px;
+}
+
+.arrivle-caption a p{
+    color: var(--EGRAY);
+    margin-bottom: 10px;
+}
+
+.arrivle-caption h6{
+    font-size: 23px;
+}
+
+figcaption{
+    color: var(--BLACK2);
+    font-size: 20px;
 }
 
 
