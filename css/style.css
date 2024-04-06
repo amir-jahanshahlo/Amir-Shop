@@ -447,6 +447,7 @@ a{
 .shop-category{
     display: flex;
     justify-content: space-evenly;
+    margin: 10px;
 }
 
 .category h4{
@@ -458,6 +459,11 @@ a{
 .category img{
     width: 100%;
     height: auto;
+}
+
+.category:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 /* New Arrivel */
