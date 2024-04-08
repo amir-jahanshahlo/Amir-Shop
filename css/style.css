@@ -40,14 +40,23 @@ html {
 .header-section {
   display: flex;
   justify-content: space-between;
-  z-index: 9;
-  position: absolute;
+  z-index: 9999;
+  position: fixed;
   align-items: center;
   width: 100%;
   padding: 2em 2em 0;
   padding-top: 0;
   top: 0;
   left: 0;
+  transition: background-color 0.4s ease; 
+}
+
+/*.header-section:hover, .header-section:focus{
+  background: var(--BLACK);
+}*/
+
+.header-section.scrolled{
+  background: var(--BLACK);
 }
 
 .menu-list {
@@ -160,6 +169,7 @@ a {
   background-color: transparent;
   transition: transform 250ms ease-in-out;
   font-size: 14px;
+  font-weight: bold;
   line-height: 18px;
   box-shadow: none;
   color: var(--WHITE);
@@ -366,6 +376,7 @@ a {
   font-size: 30px;
   color: var(--BLACK);
   font-family: "Rethink Sans", sans-serif;
+  letter-spacing: 1.5px;
 }
 .banner-text p {
   font-size: 20px;

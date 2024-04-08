@@ -39,11 +39,6 @@
                 <a href="#">Customers</a>
               </li>
             </ul>
-            <!--<div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>-->
           </nav>
           <button class="log-in">
             <a href="./indexlog.html">LogIn</a>
@@ -97,7 +92,7 @@
         <li><a href="#">Men's New Arrivals</a></li>
       </ul>
       <div class="search-box">
-        <input type="text" placeholder="Search for products or brands">
+        <input type="text" placeholder="Search for products or brands" />
         <i class="fa fa-search" aria-hidden="true"></i>
       </div>
     </div>
@@ -401,7 +396,6 @@
         <h4>Shop what you love—faster and easier.</h4>
         <a href="/indexlog.html">Sign In or Create an Account</a>
       </div>
-      
     </section>
     <script>
       const toggleBtn = document.querySelector(".toggle-btn");
@@ -416,6 +410,18 @@
           ? "fa-solid fa-xmark"
           : "fa-solid fa-bars";
       };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const header = document.querySelector(".header-section");
+
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 0) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      });
     </script>
   </body>
 </html>
