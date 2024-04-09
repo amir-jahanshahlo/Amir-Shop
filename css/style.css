@@ -48,10 +48,10 @@ html {
   padding-top: 0;
   top: 0;
   left: 0;
-  transition: background-color 0.4s ease; 
+  transition: background-color 0.4s ease;
 }
 
-.header-section.scrolled{
+.header-section.scrolled {
   background: var(--BLACK);
   border: none;
 }
@@ -319,7 +319,8 @@ a {
   transform-style: preserve-3d;
 }
 
-.search-box input:hover,:focus{
+.search-box input:hover,
+:focus {
   padding: 12px 0;
   outline: 0;
   border: 1px solid transparent;
@@ -332,7 +333,7 @@ a {
   color: var(--WHITE);
   letter-spacing: 1.5px;
 }
-.search-box i.fa-search{
+.search-box i.fa-search {
   color: var(--WHITE);
   /*position: absolute;*/
 }
@@ -593,19 +594,46 @@ figcaption {
 /* end of new arrivle */
 
 /* banner 2 */
-.half-banner2{
+.banner2 {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.half-banner2 {
   display: flex;
   width: 100%;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
 }
 
-.half-banner2:first-child{
-  background-image: url('&quot;https://cdn.smartnordstrom.com/s3/csp/5915/1694686052854/UNI_VinceCamuto_Disc_804x200_disc.jpg&quot;');
-   cursor: pointer;
-   background-repeat: no-repeat;
-   background-size: cover;
-   
+.half-banner2 img {
+  width: 100%;
+  height: auto;
+  position: relative;
 }
-
+.banner2-derails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  position: absolute;
+  color: var(--ALICEBLUE);
+  font-family: "Rethink Sans", sans-serif;
+  left: 55%;
+  padding-top: 3em;
+}
+.banner2-derails h4{
+  font-size: 25px;
+  font-weight: 900;
+}
+.banner2-derails p{
+  padding-top: 0.2rem;
+  font-size: 20px;
+}
+.banner2-derails a{
+  text-decoration: underline;
+  padding-top: 1rem;
+}
 /* deals and shop*/
 .shop-title {
   text-align: center;
