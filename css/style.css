@@ -51,12 +51,9 @@ html {
   transition: background-color 0.4s ease; 
 }
 
-/*.header-section:hover, .header-section:focus{
-  background: var(--BLACK);
-}*/
-
 .header-section.scrolled{
   background: var(--BLACK);
+  border: none;
 }
 
 .menu-list {
@@ -99,6 +96,7 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  border: none;
 }
 
 .logo-name-p {
@@ -156,60 +154,6 @@ a {
   transition-delay: 0.4s;
   color: aliceblue;
   border-radius: 20px;
-}
-
-/* search */
-.search-box {
-  padding-top: 1rem;
-  display: block;
-}
-.search-box input {
-  width: 50%;
-  padding: 12px 24px;
-  background-color: transparent;
-  transition: transform 250ms ease-in-out;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 18px;
-  box-shadow: none;
-  color: var(--WHITE);
-  background-color: transparent;
-  position: relative;
-  /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  background-position: 95% center;*/
-  border-radius: 50px;
-  border: 1px solid var(--WHITE);
-  transition: all 250ms ease-in-out;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.search-box input:hover,:focus{
-  padding: 12px 0;
-  outline: 0;
-  border: 1px solid transparent;
-  border-bottom: 1px solid var(--WHITE);
-  border-radius: 0;
-  /*background-position: 100% center;*/
-}
-.search-box input::placeholder {
-  font-family: "Rethink Sans", sans-serif;
-  color: var(--WHITE);
-  letter-spacing: 1.5px;
-}
-.search-box i.fa-search{
-  color: var(--WHITE);
-  /*position: absolute;*/
-}
-.search-box i.fa.fa-search {
-  position: absolute;
-  right: 52%; /* Adjust this value as needed */
-  bottom: 3%;
-  /*top: 0%;*/
-  /*transform: translateY(-50%);*/
-  cursor: pointer;
 }
 
 /* dropdown menu */
@@ -280,11 +224,6 @@ a {
 .head-text h1 {
   font-size: 150px;
   color: transparent;
-  /*-webkit-text-stroke: 1px var(--WHITE);
-    background: url('../assets/images/back.png');
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;*/
   background: linear-gradient(
     90deg,
     rgba(186, 148, 62, 1) 0%,
@@ -316,7 +255,7 @@ a {
 
 .head-text h4 {
   font-size: 2vw;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: left;
   text-wrap: wrap;
   width: 500px;
@@ -330,7 +269,7 @@ a {
   list-style: none;
   display: flex;
   gap: 50px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 23px;
   color: var(--WHITE);
   font-family: "Rethink Sans", sans-serif;
@@ -354,6 +293,56 @@ a {
 
 .head-text ul li a:hover::after {
   width: 100%;
+}
+
+/* search */
+.search-box {
+  padding-top: 1rem;
+  display: block;
+}
+.search-box input {
+  width: 50%;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  box-shadow: none;
+  color: var(--WHITE);
+  background-color: transparent;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid var(--WHITE);
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.search-box input:hover,:focus{
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--WHITE);
+  border-radius: 0;
+  /*background-position: 100% center;*/
+}
+.search-box input::placeholder {
+  font-family: "Rethink Sans", sans-serif;
+  color: var(--WHITE);
+  letter-spacing: 1.5px;
+}
+.search-box i.fa-search{
+  color: var(--WHITE);
+  /*position: absolute;*/
+}
+.search-box i.fa.fa-search {
+  position: absolute;
+  right: 52%; /* Adjust this value as needed */
+  bottom: 3%;
+  /*top: 0%;*/
+  /*transform: translateY(-50%);*/
+  cursor: pointer;
 }
 
 /* end head-text////////////////////////// */
@@ -602,6 +591,20 @@ figcaption {
 }
 
 /* end of new arrivle */
+
+/* banner 2 */
+.half-banner2{
+  display: flex;
+  width: 100%;
+}
+
+.half-banner2:first-child{
+  background-image: url('&quot;https://cdn.smartnordstrom.com/s3/csp/5915/1694686052854/UNI_VinceCamuto_Disc_804x200_disc.jpg&quot;');
+   cursor: pointer;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
 
 /* deals and shop*/
 .shop-title {
