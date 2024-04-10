@@ -22,6 +22,9 @@ html {
   --GRAY: #191a1b;
   --EGRAY: #707072;
   --BLACK2: #111111;
+  --RED:#f65130;
+  --GOLD:gold;
+
 }
 
 /* header ////////////////////////////*/
@@ -685,15 +688,16 @@ figcaption {
 }
 
 .item-shop {
-  display: grid;
-  grid-template-rows: min-content;
+  display: flex;
+  /*grid-template-rows: min-content;*/
+  flex-direction: column;
 }
 .item-shop img {
   width: 100%;
   height: auto;
 }
 
-.arrivel-titile h4 {
+.shop-titile h4 {
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
@@ -706,8 +710,9 @@ figcaption {
 
 .shop-caption {
   display: inline-block;
-  align-items: center;
+  /*align-items: start;*/
   text-align: left;
+  height: min-content;
   /*top: 0;*/
 }
 
@@ -716,11 +721,20 @@ figcaption {
   font-size: 18px;
   font-family: "Rethink Sans", sans-serif;
 }
-
+.shop-caption p{
+  color:var(--RED) ;
+} 
+.shop-caption a{
+  font-size: 16px;
+  color:var(--RED) ;
+}
 .shop-caption:last-child {
   font-size: 23px;
   margin-bottom: 1rem;
   font-family: "Rethink Sans", sans-serif;
+}
+.shop-caption span{
+  text-decoration: line-through;
 }
 .item-shop figure{
   position: relative;
@@ -736,6 +750,12 @@ figcaption {
   padding: 5px;
   border-left: 1px solid;
   border-bottom: 1px solid;
+}
+
+.rate-star{
+  display: flex;
+  padding-top: 10px;
+  height: auto;
 }
 
 @media (min-aspect-ratio: 16/9) and (min-width: 1440) {
