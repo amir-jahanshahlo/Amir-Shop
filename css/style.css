@@ -766,6 +766,10 @@ figcaption {
 }
 
 /* email part */
+.Email-section{
+  width: 100%;
+  display: inline-block;
+}
 .email-input {
   display: flex;
   align-items: center;
@@ -821,23 +825,56 @@ footer {
   background-color: var(--FOOTER);
   width: 100%;
   height: auto;
+  display: flex;
   /*bottom: 0;*/
+}
+.contianer{
+  max-width: 1170px;
+  display: flex;
+  align-content: center;
 }
 .main-footer {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: 1rem;
+  width: 100%;
 }
 .footer-colomn {
-  display: grid;
-  grid-column: 1;
+  width: 14%;
+  margin: 3%;
+  text-align: left;
+  padding: 0;
 }
 .title-colomn {
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 12px;
-  padding-bottom: 3px;
   text-transform: capitalize;
   font-family: "Rethink Sans", sans-serif;
+  width: 100%;
+  text-wrap: nowrap;
+}
+.colomn-items{
+  display: grid;
+  grid-column: 1;
+  width: 100%;
+}
+.colomn-items ul{
+  list-style: none;
+}
+.link-list-colomn{
+  font-family: "Rethink Sans", sans-serif;
+  margin: 1rem 0 1rem;
+}
+
+.apps{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  margin: 1rem;
+  /*width: 100%;*/
 }
 
 @media (min-aspect-ratio: 16/9) and (min-width: 1440) {
