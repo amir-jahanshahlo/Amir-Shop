@@ -835,14 +835,14 @@ footer {
 }
 .main-footer {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   align-content: center;
   text-align: center;
   margin: 1rem;
   width: 100%;
 }
 .footer-colomn {
-  width: 14%;
+  /*width: 30%;*/
   margin: 3%;
   text-align: left;
   padding: 0;
