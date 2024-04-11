@@ -107,7 +107,7 @@ a {
   color: var(--AZURE);
   /*font-family: "Madimi One", sans-serif;*/
   font-family: "Rethink Sans", sans-serif;
-letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 
 .log-in {
@@ -762,6 +762,58 @@ figcaption {
   display: flex;
   padding-top: 10px;
   height: auto;
+}
+
+/* email part */
+.email-input {
+  display: flex;
+  /*flex-wrap: nowrap;*/
+  /*justify-content: space-between;*/
+  align-items: center;
+  float: right;
+  margin: 2rem;
+  width: 50%;
+}
+.email-input div{
+  width: 100%;
+  padding: 5px;
+}
+.email-p {
+  font-family: "Rethink Sans", sans-serif;
+  font-weight: 700;
+  /*padding-right: 2rem;*/
+  /*width: 100%;*/
+  text-align: right;
+  /*text-wrap: nowrap;*/
+}
+.email-input input {
+  border: 1px solid #838d91;
+  border-radius: 0;
+  color: #191a1b;
+  padding: 0 0.625rem 0.0625rem;
+  resize: none;
+  transition: border-color 400ms ease-out;
+  width: 100%;
+  /*size: 80;*/
+  height: 2rem;
+}
+.email-input input:hover{
+  border-bottom: 3px solid var(--BLACK);
+}
+
+.email-input button{
+  border: none;
+  width: 100%;
+  height: 2rem;
+  background: var(--BLACK);
+  color: var(--WHITE);
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.email-input button:hover{
+  background: var(--EGRAY);
+  transition: background .2s;
 }
 
 @media (min-aspect-ratio: 16/9) and (min-width: 1440) {
