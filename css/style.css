@@ -24,6 +24,7 @@ html {
   --BLACK2: #111111;
   --RED: #f65130;
   --GOLD: gold;
+  --FOOTER: #f0f3f5;
 }
 
 /* header ////////////////////////////*/
@@ -779,7 +780,7 @@ figcaption {
   padding-right: 1rem;
   width: 100%;
 }
-.email-input div{
+.email-input div {
   width: 100%;
   padding: 2px;
 }
@@ -794,11 +795,11 @@ figcaption {
   width: 100%;
   height: 2rem;
 }
-.email-input input:hover{
+.email-input input:hover {
   border-bottom: 3px solid var(--BLACK);
 }
 
-.email-input button{
+.email-input button {
   border: none;
   width: 100%;
   height: 2rem;
@@ -808,9 +809,35 @@ figcaption {
   font-size: 15px;
   text-align: center;
 }
-.email-input button:hover{
+.email-input button:hover {
   background: var(--EGRAY);
-  transition: background .2s;
+  transition: background 0.2s;
+}
+
+/* end of the email part  */
+
+/* footer */
+footer {
+  background-color: var(--FOOTER);
+  width: 100%;
+  height: auto;
+  /*bottom: 0;*/
+}
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-colomn {
+  display: grid;
+  grid-column: 1;
+}
+.title-colomn {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  padding-bottom: 3px;
+  text-transform: capitalize;
+  font-family: "Rethink Sans", sans-serif;
 }
 
 @media (min-aspect-ratio: 16/9) and (min-width: 1440) {
