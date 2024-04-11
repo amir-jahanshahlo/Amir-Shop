@@ -767,25 +767,23 @@ figcaption {
 /* email part */
 .email-input {
   display: flex;
-  /*flex-wrap: nowrap;*/
-  /*justify-content: space-between;*/
   align-items: center;
   float: right;
   margin: 2rem;
   width: 50%;
 }
-.email-input div{
-  width: 100%;
-  padding: 5px;
-}
-.email-p {
+.email-input p {
   font-family: "Rethink Sans", sans-serif;
   font-weight: 700;
-  /*padding-right: 2rem;*/
-  /*width: 100%;*/
   text-align: right;
-  /*text-wrap: nowrap;*/
+  padding-right: 1rem;
+  width: 100%;
 }
+.email-input div{
+  width: 100%;
+  padding: 2px;
+}
+
 .email-input input {
   border: 1px solid #838d91;
   border-radius: 0;
@@ -794,7 +792,6 @@ figcaption {
   resize: none;
   transition: border-color 400ms ease-out;
   width: 100%;
-  /*size: 80;*/
   height: 2rem;
 }
 .email-input input:hover{
