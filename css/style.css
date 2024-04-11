@@ -22,9 +22,8 @@ html {
   --GRAY: #191a1b;
   --EGRAY: #707072;
   --BLACK2: #111111;
-  --RED:#f65130;
-  --GOLD:gold;
-
+  --RED: #f65130;
+  --GOLD: gold;
 }
 
 /* header ////////////////////////////*/
@@ -106,7 +105,9 @@ a {
   font-size: 30px;
   font-weight: 800;
   color: var(--AZURE);
-  font-family: "Madimi One", sans-serif;
+  /*font-family: "Madimi One", sans-serif;*/
+  font-family: "Rethink Sans", sans-serif;
+letter-spacing: 5px;
 }
 
 .log-in {
@@ -618,42 +619,47 @@ figcaption {
 .banner2-derails {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   position: absolute;
   color: var(--ALICEBLUE);
   font-family: "Rethink Sans", sans-serif;
   left: 55%;
   padding-top: 3em;
 }
-.banner2-derails h4{
+.banner2-derails h4 {
   font-size: 25px;
   font-weight: 900;
 }
-.banner2-derails p{
+.banner2-derails p {
   padding-top: 0.2rem;
   font-size: 20px;
 }
-.banner2-derails a{
+.banner2-derails a {
   text-decoration: underline;
   padding-top: 1rem;
 }
 /* deals and shop*/
 .shop-title {
   text-align: center;
+  padding-top: 2rem;
 }
 .shop-title h4 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-family: "Rethink Sans", sans-serif;
 }
-.shop-list-title{
+.shop-title a {
+  text-decoration: underline;
+}
+.shop-list-title {
   margin: 2rem;
   font-family: "Rethink Sans", sans-serif;
 }
-.shop-list-title h4{
+.shop-list-title h4 {
   font-size: 20px;
   font-weight: 700;
 }
-.shop-list-title p{
+.shop-list-title p {
   font-size: 1rem;
   margin-top: 5px;
   line-height: 20px;
@@ -700,7 +706,7 @@ figcaption {
 .shop-titile h4 {
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
   font-size: 42px;
   display: block;
   font-weight: 400;
@@ -721,22 +727,22 @@ figcaption {
   font-size: 18px;
   font-family: "Rethink Sans", sans-serif;
 }
-.shop-caption p{
-  color:var(--RED) ;
-} 
-.shop-caption a{
+.shop-caption p {
+  color: var(--RED);
+}
+.shop-caption a {
   font-size: 16px;
-  color:var(--RED) ;
+  color: var(--RED);
 }
 .shop-caption:last-child {
   font-size: 23px;
   margin-bottom: 1rem;
   font-family: "Rethink Sans", sans-serif;
 }
-.shop-caption span{
+.shop-caption span {
   text-decoration: line-through;
 }
-.item-shop figure{
+.item-shop figure {
   position: relative;
 }
 
@@ -752,7 +758,7 @@ figcaption {
   border-bottom: 1px solid;
 }
 
-.rate-star{
+.rate-star {
   display: flex;
   padding-top: 10px;
   height: auto;
