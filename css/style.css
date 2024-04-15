@@ -25,6 +25,9 @@ html {
   --RED: #f65130;
   --GOLD: gold;
   --FOOTER: #f0f3f5;
+
+  /* fonts */
+  --RETHINK:"Rethink Sans", sans-serif;
 }
 
 /* header ////////////////////////////*/
@@ -32,13 +35,6 @@ html {
 .hero {
   width: 100%;
   height: 100vh;
-  position: relative;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin-top: 1rem;
 }
 .header-section {
   display: flex;
@@ -49,8 +45,6 @@ html {
   width: 100%;
   padding: 2em 2em 0;
   padding-top: 0;
-  top: 0;
-  left: 0;
   transition: background-color 0.4s ease;
 }
 
@@ -62,7 +56,6 @@ html {
 .menu-list {
   display: flex;
   list-style: none;
-  padding: 0;
 }
 
 .menu-list-item {
@@ -71,7 +64,7 @@ html {
   padding-left: 3rem;
   font-size: 25px;
   font-weight: 600;
-  font-family: "Anek Kannada", sans-serif;
+  font-family: var(--RETHINK);
 }
 
 .menu-list-item a {
@@ -106,7 +99,6 @@ a {
   font-size: 30px;
   font-weight: 800;
   color: var(--AZURE);
-  /*font-family: "Madimi One", sans-serif;*/
   font-family: "Rethink Sans", sans-serif;
   letter-spacing: 5px;
 }
@@ -127,38 +119,14 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 4px;
   width: 0;
   background-color: #ffc506;
   transition: 0.5s ease;
 }
 
-.log-in:hover {
-  color: #1e1e2b;
-  transition-delay: 0.5s;
-}
-
 .log-in:hover::before {
   width: 100%;
-}
-
-.log-in::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #ffc506;
-  transition: 0.4s ease;
-  z-index: -1;
-}
-
-.log-in:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
-  border-radius: 20px;
 }
 
 /* dropdown menu */
@@ -192,7 +160,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: var(--WHITE);
+  font-family: var(--RETHINK);
 }
 
 .dropdown-menu .log-in {
@@ -220,16 +190,22 @@ a {
 
 .head-text {
   position: absolute;
+  /*display: grid;
+  grid-column: 1;*/
   top: 40%;
-  left: 8rem;
+  left: 3rem;
   opacity: 1;
   text-align: left;
+  width: 30%;
+  backdrop-filter: blur(5px);
 }
 
 .head-text h1 {
-  font-size: 150px;
-  color: transparent;
-  background: linear-gradient(
+  font-size: 50px;
+  font-family: var(--RETHINK);
+  color: var(--WHITE);
+  font-weight: 100;
+  /*background: linear-gradient(
     90deg,
     rgba(186, 148, 62, 1) 0%,
     rgba(236, 172, 32, 1) 20%,
@@ -243,7 +219,7 @@ a {
   -webkit-text-fill-color: transparent;
   animation: shine 3s alternate infinite;
   background-size: 200%;
-  background-position: left;
+  background-position: left;*/
 }
 
 /*@keyframes back{
@@ -252,11 +228,11 @@ a {
      }
 }*/
 
-@keyframes shine {
+/*@keyframes shine {
   to {
     background-position: right;
   }
-}
+}*/
 
 .head-text h4 {
   font-size: 2vw;
@@ -266,7 +242,7 @@ a {
   width: 500px;
   color: var(--WHITE);
   font-family: "Rethink Sans", sans-serif;
-  font-weight: lighter;
+  font-weight: 100;
   /*color: rgba(242, 215, 67, 0.855);*/
 }
 
@@ -280,11 +256,11 @@ a {
   font-family: "Rethink Sans", sans-serif;
 }
 
-.head-text ul li a {
+/*.head-text ul li a {
   position: relative;
-}
+}*/
 
-.head-text ul li a::after {
+/*.head-text ul li a::after {
   content: "";
   width: 0;
   height: 3px;
@@ -298,30 +274,30 @@ a {
 
 .head-text ul li a:hover::after {
   width: 100%;
-}
+}*/
 
 /* search */
 .search-box {
   padding-top: 1rem;
   display: block;
+  width: 100%;
 }
 .search-box input {
-  width: 50%;
+  width: 100%;
   padding: 12px 24px;
   background-color: transparent;
   transition: transform 250ms ease-in-out;
   font-size: 14px;
-  font-weight: bold;
   line-height: 18px;
   box-shadow: none;
   color: var(--WHITE);
   background-color: transparent;
-  position: relative;
   border-radius: 50px;
   border: 1px solid var(--WHITE);
   transition: all 250ms ease-in-out;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+opacity: 1;
 }
 
 .search-box input:hover,
@@ -331,25 +307,21 @@ a {
   border: 1px solid transparent;
   border-bottom: 1px solid var(--WHITE);
   border-radius: 0;
-  /*background-position: 100% center;*/
 }
 .search-box input::placeholder {
   font-family: "Rethink Sans", sans-serif;
   color: var(--WHITE);
   letter-spacing: 1.5px;
 }
-.search-box i.fa-search {
+/*.search-box i.fa-search {
   color: var(--WHITE);
-  /*position: absolute;*/
-}
-.search-box i.fa.fa-search {
+}*/
+/*.search-box i.fa.fa-search {
   position: absolute;
-  right: 52%; /* Adjust this value as needed */
+  right: 5%;
   bottom: 3%;
-  /*top: 0%;*/
-  /*transform: translateY(-50%);*/
   cursor: pointer;
-}
+}*/
 
 /* end head-text////////////////////////// */
 
@@ -832,7 +804,7 @@ footer {
 }
 .main-footer {
   display: flex;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   align-content: center;
   text-align: center;
   margin: 1rem;
@@ -888,6 +860,7 @@ footer {
   gap: 1rem;
   align-items: center;
   font-size: 1.5rem;
+  width: 100%;
 }
 .privacy-stuff{
   display: flex;
@@ -918,9 +891,9 @@ footer {
     width: 100%;
     height: auto;
   }
-  .head-text {
+  /*.head-text {
     font-size: 100px;
-  }
+  }*/
   .header-section .menu {
     display: none;
   }
@@ -940,9 +913,9 @@ footer {
     width: auto;
     height: 100%;
   }
-  .head-text {
+  /*.head-text {
     font-size: 100px;
-  }
+  }*/
   .header-section .menu {
     display: none;
   }
@@ -964,26 +937,52 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
-  .head-text h1 {
+  /*.head-text h1 {
     font-size: 100px;
-  }
+  }*/
 }
 
-@media only screen and (max-width: 1023px) {
-  .head-text h1 {
-    font-size: 50px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-section .menu {
+    display: none;
   }
+  .header-section .log-in {
+    display: none;
+  }
+  .header-section .toggle-btn {
+    display: block;
+    /*color: var(--BLACK);*/
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  /*.head-text h1 {
+    font-size: 50px;
+  }*/
 }
 
 @media only screen and (max-width: 767px) {
-  .head-text h1 {
+  .header-section .menu {
+    display: none;
+  }
+  .header-section .log-in {
+    display: none;
+  }
+  .header-section .toggle-btn {
+    display: block;
+    /*color: var(--BLACK);*/
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  /*.head-text h1 {
     font-size: 25px;
     text-wrap: wrap;
-  }
+  }*/
 }
 
 @media (max-width: 992px) {
-  .header-section .menu {
+  /*.header-section .menu {
     display: none;
   }
   .header-section .log-in {
@@ -994,10 +993,10 @@ footer {
   }
   .dropdown-menu {
     display: block;
-  }
+  }*/
 
-  .head-text {
+  /*.head-text {
     left: 5%;
     top: 60%;
-  }
+  }*/
 }
