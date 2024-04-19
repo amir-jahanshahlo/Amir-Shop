@@ -35,6 +35,9 @@ html {
   --Dosis: "Dosis", sans-serif;
 }
 
+.wrapper{
+  width: 100%;
+}
 /* header ////////////////////////////*/
 
 .hero {
@@ -113,8 +116,9 @@ a {
   color: var(--WHITE);
   font-size: 30px;
   border: 0;
-  padding: 10px 30px;
-  font-family: "Madimi One", sans-serif;
+  padding: 10px 0px;
+  font-family: var(--RETHINK);
+  font-weight: 700;
   position: relative;
   cursor: pointer;
 }
@@ -1002,16 +1006,16 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .header-section {
-    padding-top: 0.5rem;
+    padding: 0.5rem;
   }
   .logo-name-p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     color: var(--AZURE);
     font-family: "Rethink Sans", sans-serif;
   }
   .header-section .toggle-btn {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--WHITE);
   }
   .head-text {
