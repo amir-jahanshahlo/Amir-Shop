@@ -436,10 +436,8 @@ a {
   grid-auto-flow: column;
   grid-auto-columns: 23%;
   overflow-x: auto;
-  /*overscroll-behavior-inline:contain*/
-  margin: 0 2rem 5rem 2rem;
+  margin: 0 2rem 3rem 2rem;
   scroll-behavior: smooth;
-  /*scrollbar-color: var(--BLACK);*/
 }
 
 .new-arrivel::-webkit-scrollbar {
@@ -867,7 +865,7 @@ footer {
   .banner-item div p {
     font-size: 15px;
   }
-  .head-text{
+  .head-text {
     left: 5px;
     transform: translateX(32rem);
     top: 30%;
@@ -875,7 +873,7 @@ footer {
     transition: ease-in 0.8s;
     backdrop-filter: initial;
   }
-  
+
   .head-text h1 {
     font-size: 40px;
     text-wrap: nowrap;
@@ -900,7 +898,7 @@ footer {
   .dropdown-menu {
     display: block;
   }
-  .te-vi-container{
+  .te-vi-container {
     flex-direction: row;
   }
   .head-text {
@@ -922,6 +920,9 @@ footer {
   }
   .banner-item {
     flex: initial;
+  }
+  .banner-item div {
+    text-align: center;
   }
   .banner-item div p {
     font-size: 15px;
@@ -948,7 +949,7 @@ footer {
   .head-text {
     top: 52%;
     width: fit-content;
-    left:5px
+    left: 5px;
   }
   .head-text h1 {
     font-size: 50px;
@@ -963,10 +964,7 @@ footer {
     width: 100%;
     font-size: 11px;
   }
-  /*.banner-item {
-    flex: 1 1 0px;
-    width: 100%;
-  }*/
+  .banner-item div {
+    text-align: center;
+  }
 }
-
-@media screen and (min-width: 320px) and (max-width: 425px)
